@@ -24,15 +24,13 @@ const FooterComponent = () => {
           </div>
         </div>
         <ul className={styles.footerLinks}>
-          {paginationArr?.map((item, index) => {
+          {paginationArr?.map((item) => {
             return (
-              <>
-                <li key={index + 1} className={styles.pageItem}>
+                <li key={Date.now() + Math.random()} className={styles.pageItem}>
                   <Link className={styles.pageText} href={item.name === "Yangiliklar" ? item.href : `/news${item.href}`}>
                     {item.name}
                   </Link>
                 </li>
-              </>
             );
           })}
         </ul>

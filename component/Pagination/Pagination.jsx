@@ -26,13 +26,12 @@ const Pagination = () => {
     <div className={styles.pagination}>
       <div className="container">
         <ul className={styles.flexCenter}>
-          {arr?.map((item, index) => {
+          {arr?.map((item) => {
             return (
-              <>
-                <li key={index + 1} onClick={() => changeCurrent(index + 1)} className={styles.pageItem}>
+
+                <li key={Date.now() + Math.random()} onClick={() => changeCurrent(index + 1)} className={styles.pageItem}>
                   <Link className={item.active ? styles.currentText : styles.itemText} href={item.name === "Yangiliklar" ? item.href : `/news${item.href}`}>{item.name}</Link>
                 </li>
-              </>
             );
           })}
         </ul>

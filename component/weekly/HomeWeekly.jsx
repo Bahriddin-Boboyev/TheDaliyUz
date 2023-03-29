@@ -58,11 +58,11 @@ const HomeWeekly = ({title}) => {
           </p>
         </div>
         <div className={styles.itemsBlock}>
-          {temporarilyArr?.map((el, index) => {
+          {temporarilyArr?.map((el) => {
             return (
-              <>
-                <WeeklyCard key={index + 1} data={el} />
-              </>
+    
+                <WeeklyCard key={Date.now() + Math.random()} data={el} />
+   
             );
           })}
         </div>

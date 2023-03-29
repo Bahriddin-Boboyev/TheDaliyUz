@@ -81,13 +81,12 @@ const HeaderTop = () => {
     <div className={styles.body}>
       <div className={`container ${styles.headerTopContainer}`}>
         <ul className={styles.flexCenter}>
-          {CurrencyArr?.map((item, index) => {
+          {CurrencyArr?.map((item) => {
+            console.log(Date.now());
             return (
-              <>
                 <li
-                  key={index + 1}
-                  className={`${styles.flexCenter} ${styles.headerLeftItem}`}
-                >
+                  key={Date.now() + Math.random()}
+                  className={`${styles.flexCenter} ${styles.headerLeftItem}`}>
                   <p className={styles.headerLeftParagraph}>{item.name}</p>
                   <span className={styles.headerLeftSum}>{item.value}</span>
                   <span
@@ -102,16 +101,14 @@ const HeaderTop = () => {
                       : `${item.increase}`}
                   </span>
                 </li>
-              </>
             );
           })}
         </ul>
         <div className={styles.flexCenter}>
           <ul className={styles.flexCenter}>
-            {langState?.map((item, index) => {
+            {langState?.map((item) => {
               return (
-                <>
-                  <li key={index + 1} className={styles.langItem}>
+                  <li key={Date.now() + Math.random()} className={styles.langItem}>
                     <button
                       className={`${styles.headerBtn} ${
                         item.selected && styles.selectedBtn
@@ -121,7 +118,6 @@ const HeaderTop = () => {
                       {item.name}
                     </button>
                   </li>
-                </>
               );
             })}
           </ul>

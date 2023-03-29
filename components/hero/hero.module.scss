@@ -75,15 +75,15 @@
     }
     .mainFooterItem:nth-child(1):before {
       content: "";
-      background-image: url("../../../assets/imgs/hero-calendar.svg");
+      background-image: url("/assets/imgs/hero-calendar.svg");
     }
     .mainFooterItem:nth-child(2):before {
       content: "";
-      background-image: url("../../../assets/imgs/hero-hour.svg");
+      background-image: url("/assets/imgs/hero-hour.svg");
     }
     .mainFooterItem:nth-child(3):before {
       content: "";
-      background-image: url("../../../assets/imgs/hero-watch.svg");
+      background-image: url("/assets/imgs/hero-watch.svg");
     }
   }
 }
@@ -188,14 +188,14 @@
 }
 .rightFooterItem:nth-child(1):before {
   content: "";
-  background-image: url("../../../assets/imgs/right-calendar.svg");
+  background-image: url("/assets/imgs/right-calendar.svg");
 }
 .rightFooterItem:nth-child(2):before {
   content: "";
-  background-image: url("../../../assets/imgs/right-hour.svg");
+  background-image: url("/assets/imgs/right-hour.svg");
 }
 .rightFooterItem:nth-child(3):before {
   content: "";
   height: 16px;
-  background-image: url("../../../assets/imgs/right-watch.svg");
+  background-image: url("/assets/imgs/right-watch.svg");
 }

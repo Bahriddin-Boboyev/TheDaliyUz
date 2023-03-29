@@ -52,11 +52,9 @@ const NewsBox = () => {
           <div className={styles.left}>
             <h2 className={styles.leftTitle}>{language.news}</h2>
             <div className={styles.leftBox}>
-              {mockData?.map((item, index) => {
+              {mockData?.map((item) => {
                 return (
-                  <>
-                    <NewsCard key={index + 1} data={item} />
-                  </>
+                    <NewsCard key={Date.now() + Math.random()} data={item} />
                 );
               })}
               <button className={styles.btn}>{language.more}</button>
@@ -65,11 +63,9 @@ const NewsBox = () => {
           <div className={styles.right}>
             <h2 className={styles.rightTitle}>{language.event_wait_list}</h2>
             <div className={styles.rightBox}>
-              {eventData?.map((item, index) => {
+              {eventData?.map((item) => {
                 return (
-                  <>
-                    <EventCard key={index + 1} data={item} />
-                  </>
+                    <EventCard key={Date.now() + Math.random()} data={item} />
                 );
               })}
               <button className={styles.btn}>{language.more}</button>
