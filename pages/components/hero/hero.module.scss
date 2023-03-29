@@ -1,0 +1,201 @@
+.block {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-row-gap: 20px;
+  height: 100%;
+  margin-bottom: 50px;
+}
+
+.firstItem {
+  grid-row-start: 1;
+  grid-column-start: 1;
+  grid-row-end: 4;
+  grid-column-end: 5;
+  width: 630px;
+  height: 454px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  overflow: hidden;
+  color: #fff;
+  background: linear-gradient(
+    180deg,
+    rgba(217, 217, 217, 0) 0%,
+    rgba(2, 3, 6, 0.54) 53.03%
+  );
+  padding: 20px 33px;
+  .firstImg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: 0.9s all ease;
+    width: 100%;
+    object-fit: cover;
+    z-index: -5;
+  }
+  .mainTitle {
+    font-family: var(--font-secondary);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 47px;
+  }
+  .mainLine {
+    border: 1px solid #eaecf6;
+    margin-top: 4px;
+    margin-bottom: 16px;
+    border-radius: 2px;
+  }
+  .mainFooter {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 32px;
+    .mainFooterItem {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-family: var(--font-main);
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 21px;
+      color: #eaecf6;
+    }
+    .mainFooterItem::before {
+      content: "";
+      display: block;
+      width: 20px;
+      height: 20px;
+      background-repeat: no-repeat;
+      background-position: left center;
+      background-size: contain;
+    }
+    .mainFooterItem:nth-child(1):before {
+      content: "";
+      background-image: url("../../../assets/imgs/hero-calendar.svg");
+    }
+    .mainFooterItem:nth-child(2):before {
+      content: "";
+      background-image: url("../../../assets/imgs/hero-hour.svg");
+    }
+    .mainFooterItem:nth-child(3):before {
+      content: "";
+      background-image: url("../../../assets/imgs/hero-watch.svg");
+    }
+  }
+}
+
+.firstItem:hover {
+  .firstImg {
+    transform: scale(1.08);
+  }
+}
+
+.rightItem {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 19px;
+  border-bottom: 1px solid #d3d8f5;
+}
+
+.rightItem:nth-last-child(1) {
+  grid-row-start: 1;
+  grid-column-start: 5;
+  grid-row-end: 2;
+  grid-column-end: 9;
+}
+
+.rightItem:nth-child(2) {
+  grid-row-start: 2;
+  grid-column-start: 5;
+  grid-row-end: 3;
+  grid-column-end: 9;
+}
+
+.rightItem:nth-child(3) {
+  grid-row-start: 3;
+  grid-column-start: 5;
+  grid-row-end: 4;
+  grid-column-end: 9;
+  // padding-bottom: ;
+  border-bottom: none;
+}
+
+.rightType {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 135%;
+  color: #5064d6;
+  margin-bottom: 4px;
+}
+
+.rightTitle {
+  font-family: var(--font-secondary);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 33px;
+  color: #262c51;
+  margin-bottom: 9px;
+}
+
+.rightImgBlock {
+  display: block;
+  width: 267px !important;
+  height: 125px;
+  overflow: hidden;
+  padding-right: 0;
+}
+
+.rightImg {
+  max-width: 267px;
+  object-fit: cover;
+  transition: 0.6s all ease;
+}
+
+.rightImg:hover {
+  transform: scale(1.06);
+}
+
+.rightFooter {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.rightFooterItem {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #a2a5bf;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.rightFooterItem::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: contain;
+}
+.rightFooterItem:nth-child(1):before {
+  content: "";
+  background-image: url("../../../assets/imgs/right-calendar.svg");
+}
+.rightFooterItem:nth-child(2):before {
+  content: "";
+  background-image: url("../../../assets/imgs/right-hour.svg");
+}
+.rightFooterItem:nth-child(3):before {
+  content: "";
+  height: 16px;
+  background-image: url("../../../assets/imgs/right-watch.svg");
+}

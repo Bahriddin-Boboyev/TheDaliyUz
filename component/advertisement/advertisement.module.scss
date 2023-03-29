@@ -1,0 +1,71 @@
+.body {
+  background: var(--brand);
+  border-radius: 16px;
+  padding: 62px 75px 81px 75px !important;
+  padding-left: 75px !important;
+  background-repeat: no-repeat;
+  background-position: right -10px center;
+  background-size: auto 100%;
+  background-image: url('../../assets/imgs/advert-phone.png');
+  margin-bottom: 70px;
+}
+
+.title {
+  font-family: var(--font-main);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 51px;
+  color: #ffffff;
+  max-width: 588px;
+  margin-bottom: 15px;
+  span {
+    color: #7c8ae0;
+  }
+}
+
+.linkBlock {
+  display: flex;
+  align-items: center;
+}
+
+.link {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: 0.15s all linear;
+}
+
+.linkItem:nth-child(1) {
+  .link {
+    background-image: url("../../assets/imgs/advert-instagram.svg");
+  }
+}
+
+.linkItem:nth-child(2) {
+  .link {
+    background-image: url("../../assets/imgs/advert-facebook.svg");
+  }
+}
+
+.linkItem:nth-child(3) {
+  .link {
+    background-image: url("../../assets/imgs/advert-twitter.svg");
+  }
+}
+
+.linkItem:nth-child(4) {
+  .link {
+    background-image: url("../../assets/imgs/advert-telegram.svg");
+  }
+}
+
+.link:hover {
+  transform: translateY(-4px);
+}
+
+.link:active {
+  transform: translateY(0px);
+}

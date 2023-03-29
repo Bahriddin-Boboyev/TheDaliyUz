@@ -1,0 +1,89 @@
+.body {
+  max-width: 305px;
+  width: 100%;
+}
+
+.imgBox {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  display: block;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.image {
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: 0.6s all ease;
+}
+
+.image:hover {
+  transform: scale(1.06);
+}
+
+.type {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 135%;
+  color: #5064d6;
+  margin-bottom: 4px;
+}
+
+.title {
+  font-family: var(--font-secondary);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  color: var(--brand);
+  margin-bottom: 10px;
+}
+
+.line {
+  width: 200px;
+  height: 1px;
+  background-color: #eaecf6;
+  border-radius: 1px;
+  margin-bottom: 10px;
+}
+
+.footerBox {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.footerItem {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #a2a5bf;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footerItem::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: contain;
+}
+.footerItem:nth-child(1):before {
+  content: "";
+  background-image: url("../../assets/imgs/right-calendar.svg");
+}
+.footerItem:nth-child(2):before {
+  content: "";
+  background-image: url("../../assets/imgs/right-hour.svg");
+}
+.footerItem:nth-child(3):before {
+  content: "";
+  height: 16px;
+  background-image: url("../../assets/imgs/right-watch.svg");
+}

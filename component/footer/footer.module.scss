@@ -1,0 +1,117 @@
+.body {
+  background-color: var(--brand);
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.flexCenter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.mediaBox {
+  display: flex;
+  align-items: center;
+  margin-top: 22px;
+}
+
+.mediaLink {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: 0.11s all linear !important;
+}
+
+.mediaLink:hover {
+  transform: translateY(-4px);
+}
+
+.mediaLink:active {
+  transform: translateY(-1px);
+}
+
+.mediaLink:nth-child(1) {
+  background-image: url("../../assets/imgs/footer-instagram.svg");
+}
+
+.mediaLink:nth-child(2) {
+  background-image: url("../../assets/imgs/footer-facebook.svg");
+}
+
+.mediaLink:nth-child(3) {
+  background-image: url("../../assets/imgs/footer-twitter.svg");
+}
+
+.mediaLink:nth-child(4) {
+  background-image: url("../../assets/imgs/footer-telegram.svg");
+}
+
+.footerLinks {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.pageItem {
+  font-family: var(--font-main);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  transition: 0.1s all linear;
+}
+
+.pageText {
+  color: #ffffff;
+  transition: 0.1s all linear;
+  border-bottom: 1.5px solid transparent;
+}
+
+.pageItem:hover {
+  transform: translateY(-1.5px);
+  .pageText {
+    border-color: #fff;
+  }
+}
+
+.contactBox {
+  display: flex;
+  flex-direction: column;
+  text-align: end;
+  align-items: flex-end;
+}
+
+.tel {
+  font-family: var(--font-main);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  padding-left: 35px;
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-image: url("../../assets/imgs/footer-tel.svg");
+  background-size: 20px 20px;
+  margin-bottom: 4px;
+}
+
+.mail {
+  font-family: var(--font-main);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #ffffff;
+}
+
+// Footer Responsive Design
+
+@media screen and (max-width: 1130px) {
+  .footerLinks {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

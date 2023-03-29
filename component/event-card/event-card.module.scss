@@ -1,0 +1,81 @@
+.body {
+  width: 100%;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #eaecf6;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding-right: 4px;
+}
+
+.imgBox {
+  width: 80px;
+  height: 80px;
+  border: 1px solid #eaecf6;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.image {
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+}
+
+.title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--brand);
+  margin-bottom: 8px;
+}
+
+.footerBox {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.footerItem {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #a2a5bf;
+  display: flex;
+  align-items: center;
+  gap: 9.3px;
+}
+
+.footerItem::before {
+  content: '';
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.footerItem:nth-child(1)::before {
+  content: '';
+  width: 13.33px;
+  height: 14.6px;
+  background-image: url('../../assets/imgs/right-calendar.svg');
+}
+
+.footerItem:nth-child(2)::before {
+  content: '';
+  width: 10.67px;
+  height: 13.33px;
+  background-image: url('../../assets/imgs/event-location.svg');
+}
+
+.link {
+  display: block;
+  width: 16px;
+  height: 16px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-image: url('../../assets/imgs/event-link.svg');
+}

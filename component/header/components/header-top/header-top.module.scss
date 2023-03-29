@@ -1,0 +1,108 @@
+.body {
+  background-color: var(--brand);
+}
+
+.headerTopContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 11px;
+  padding-bottom: 10px;
+}
+
+.flexCenter {
+  display: flex;
+  align-items: center;
+}
+
+.headerLeftItem {
+  font-family: var(--font-main);
+  font-style: normal;
+  color: #ffffff;
+  gap: 5px;
+}
+
+.headerLeftItem + .headerLeftItem {
+  margin-left: 24px;
+}
+
+.headerLeftParagraph {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.headerLeftSum {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.headerLeftGreen {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  color: #21853e !important;
+}
+
+.headerLeftRed {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  color: #bb2929 !important;
+}
+
+.headerBtn {
+  font-family: var(--font-main);
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  color: #fff;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.selectedBtn {
+  font-weight: 600 !important;
+  text-decoration: underline !important;
+}
+
+.langItem + .langItem {
+  margin-left: 10px;
+}
+
+.mediaList {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-left: 57px;
+}
+.mediaLink {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.mediaItem:nth-child(1) {
+  .mediaLink {
+    background-image: url('../../../../assets/imgs/header-facebook.svg');
+  }
+}
+
+.mediaItem:nth-child(2) .mediaLink {
+  background-image: url('../../../../assets/imgs/header-telegram.svg');
+}
+
+.mediaItem:nth-child(3) .mediaLink{
+  width: 22px;
+  background-image: url('../../../../assets/imgs/header-youtube.svg');
+}
+
+.mediaItem:nth-child(4) .mediaLink {
+  background-image: url('../../../../assets/imgs/header-twitter.svg');
+}

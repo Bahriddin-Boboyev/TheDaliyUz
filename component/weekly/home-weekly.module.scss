@@ -1,0 +1,63 @@
+.body {
+  width: 100%;
+  margin-bottom: 70px;
+}
+
+.headerBlock {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 42px;
+  color: var(--brand);
+}
+
+.itemNumber {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--brand);
+  display: flex;
+  align-items: center;
+  gap: 29px;
+  span {
+    display: block;
+    width: 10px;
+    height: 15px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-size: 7px 14px;
+    background-position: center;
+  }
+}
+.leftSelectedArrow {
+  background-image: url('../../assets/imgs/weekly-right-arrow.svg');
+  transform: rotateZ(180deg);
+}
+
+.rightSelectedArrow {
+  background-image: url('../../assets/imgs/weekly-right-arrow.svg');
+}
+
+.leftArrow {
+  background-image: url('../../assets/imgs/weekly-left-arrow.svg');
+}
+
+.rightArrow {
+  background-image: url('../../assets/imgs/weekly-left-arrow.svg');
+  transform: rotateZ(180deg);
+}
+
+.itemsBlock {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
